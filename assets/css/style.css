@@ -2172,3 +2172,139 @@ body {
   font-weight: 800;
   line-height: normal;
 }
+
+/* --- Equipe Cards --- */
+.equipe {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(50% 83.01% at 50% 133.01%, #0093ff 0%, #000 100%);
+  padding: 120px 0 80px 0;
+}
+.equipe-cards {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.equipe-card {
+  width: 400px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid #fff;
+  border-radius: 22px;
+  filter: drop-shadow(0px 4px 22.8px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(32.3px);
+  padding: 36px 32px 32px 32px;
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.22s, border 0.22s;
+  position: relative;
+}
+.equipe-card:hover {
+  box-shadow: 0 16px 48px 0 rgba(0, 147, 255, 0.22);
+  border: 2.5px solid #0093ff;
+}
+.equipe-info-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.equipe-foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  border: 1px solid #bcbcbc;
+  background: #d3d3d3;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.equipe-foto img {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  object-fit: cover;
+  display: block;
+}
+.equipe-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.equipe-nome {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.equipe-cargo {
+  align-self: flex-start;
+  color: #fff;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
+  opacity: 1;
+}
+.equipe-desc {
+  color: #fff;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 320px;
+  height: 230px;
+  flex-shrink: 0;
+  opacity: 1;
+  margin-top: 18px;
+}
+@media (max-width: 900px) {
+  .equipe-info-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .equipe-foto,
+  .equipe-foto img {
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+  }
+  .equipe-nome {
+    font-size: 16px;
+  }
+  .equipe-cargo {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+  .equipe-desc {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
