@@ -34,11 +34,12 @@
         />
       </a>
       <nav class="nav-links">
-        <a href="#">Nossos cases</a>
-        <a href="#">Serviços</a>
-        <a href="#">Dúvidas</a>
-        <a href="#">Equipe</a>
-        <a href="#" class="contact-btn">Entre em contato</a>
+        <a href="#cases">Nossos cases</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="https://wa.me/message/2NXMO2ZR2BXLK1" class="contact-btn"
+          >Entre em contato</a
+        >
       </nav>
       <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
@@ -46,16 +47,17 @@
         <span></span>
       </button>
       <nav class="mobile-menu">
-        <a href="#">Nossos cases</a>
-        <a href="#">Serviços</a>
-        <a href="#">Dúvidas</a>
-        <a href="#">Equipe</a>
-        <a href="#" class="contact-btn">Entre em contato</a>
+        <a href="#cases">Nossos cases</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="https://wa.me/message/2NXMO2ZR2BXLK1" class="contact-btn"
+          >Entre em contato</a
+        >
       </nav>
     </header>
 
     <!-- Hero Section Novo Layout -->
-    <section class="hero-inicio">
+    <section class="hero-inicio" id="cases">
       <div class="main-content">
         <div class="main-title">
           <h1>
@@ -96,7 +98,7 @@
     </section>
 
     <!-- Nova Seção: Hero + Serviços -->
-    <section class="hero-section">
+    <section class="hero-section" id="servicos">
       <div class="background-image"></div>
       <div class="hero-bg-tags-flex">
         <!-- Faixa 1 -->
@@ -178,33 +180,45 @@
       >
       <div class="cards">
         <div class="card">
-          <img src="assets/img/Pix.png" />
+          <div class="icon-glow"><img src="assets/img/Pix.png" /></div>
           <h2>Previsibilidade Financeira</h2>
           <span
             >Investimento fixo mensal sem surpresas ou custos adicionais.</span
           >
         </div>
         <div class="card">
-          <img
-            src="assets/img/Mask group.png"
-            width="72.546px"
-            height="69.437px"
-          />
+          <div class="icon-glow">
+            <img
+              src="assets/img/Mask group.png"
+              width="72.546px"
+              height="69.437px"
+            />
+          </div>
           <h2>Qualidade consistente.</h2>
           <span>Entregas alinhadas à sua marca desde o primeiro briefing</span>
         </div>
         <div class="card">
-          <img src="assets/img/grade.png" width="59.789px" height="56.421px" />
+          <div class="icon-glow">
+            <img
+              src="assets/img/grade.png"
+              width="59.789px"
+              height="56.421px"
+            />
+          </div>
           <h2>Múltiplas especialidades</h2>
           <span>Acesso a profissionais de diferentes areas do design</span>
         </div>
         <div class="card">
-          <img src="assets/img/up.png" width="46.09px" height="45.73px" />
+          <div class="icon-glow">
+            <img src="assets/img/up.png" width="46.09px" height="45.73px" />
+          </div>
           <h2>Agilidade estratégica</h2>
           <span>Demandas atendidas no seu ritmo, com processos otimizados</span>
         </div>
         <div class="card">
-          <img src="assets/img/lupa.png" width="74.671px" height="78.452px" />
+          <div class="icon-glow">
+            <img src="assets/img/lupa.png" width="74.671px" height="78.452px" />
+          </div>
           <h2>Foco no que importa</h2>
           <span
             >Libere seu tempo e sua equipe para o crescimento do seu
@@ -212,7 +226,9 @@
           >
         </div>
         <div class="card">
-          <img src="assets/img/trade.png" width="74.733px" height="43.96px" />
+          <div class="icon-glow">
+            <img src="assets/img/trade.png" width="74.733px" height="43.96px" />
+          </div>
           <h2>Parceria verdadeira</h2>
           <span
             >Um núcleo criativo que entende seu negócio, não apenas
@@ -222,7 +238,7 @@
       </div>
     </section>
 
-    <section class="duvidas">
+    <section class="duvidas" id="duvidas">
       <h1>AS PERGUNTAS QUE VOCÊ NEM FEZ</h1>
       <span>MAS A GENTE JÁ RESPONDEU :)</span>
       <div class="components-wrapper">
@@ -314,8 +330,10 @@
         </div>
       </div>
     </section>
-    <section class="Prancheta4">
-      <h1>Por que a <span>Kite</span> é a escolha certa pra você?</h1>
+    <section class="Prancheta4" id="equipe">
+      <h1 class="prancheta4-title">
+        Por que a <span>Kite</span> é a escolha certa pra você?
+      </h1>
       <div class="quadrados">
         <div class="quadrado">
           <h1>Freelancer</h1>
@@ -372,7 +390,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contato">
       <div class="footer-content">
         <div class="footer-logo">
           <img
